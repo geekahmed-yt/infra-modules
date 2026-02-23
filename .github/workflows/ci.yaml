@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         working_directory:
-          - .
           - examples/s3-secure-bucket-basic
+          - examples/vpc-minimal-basic
 
     defaults:
       run:

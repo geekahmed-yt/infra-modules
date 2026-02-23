@@ -14,3 +14,7 @@ terraform apply
 
 See the [example README](s3-secure-bucket-basic/README.md) for details.
 
+### `vpc-minimal-basic`
+
+Minimal VPC example: two public subnets (NAT + IGW), two private subnets (outbound via NAT per AZ), S3 gateway endpoint. See [vpc-minimal-basic/README.md](vpc-minimal-basic/README.md).
+

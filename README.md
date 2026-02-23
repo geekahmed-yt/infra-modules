@@ -10,12 +10,8 @@ Terraform modules for the **web-scraper** project.
 
 ### Modules
 
-- **`s3-secure-bucket`** – creates a secure, private S3 bucket with:
-  - Ownership controls
-  - Public access block
-  - Encryption (SSE-S3 / SSE-KMS)
-  - Versioning
-  - Optional TLS-only policy and access logging
+- **`s3-secure-bucket`** – creates a secure, private S3 bucket (ownership controls, encryption, versioning, optional TLS-only and access logging).
+- **`vpc-minimal`** – minimal VPC with outbound-only internet for private subnets (public subnets for NAT + IGW, private subnets route to NAT per AZ, optional S3/ECR/Logs/Secrets endpoints).
 
-See `docs/README.md` and `modules/s3-secure-bucket/README.md` for details.
+See `docs/README.md` and each module’s `README.md` for details.
 
