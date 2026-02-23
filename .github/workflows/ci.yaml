@@ -15,6 +15,8 @@ jobs:
         working_directory:
           - examples/s3-secure-bucket-basic
           - examples/vpc-minimal-basic
+          - examples/ecr-repo-basic
+          - examples/iam-runtime-basic
 
     defaults:
       run:
