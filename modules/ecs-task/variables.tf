@@ -109,9 +109,11 @@ variable "cluster_name" {
 variable "subnet_ids" {
   description = "Private subnet IDs where one-off Fargate tasks will run (used in run-task CLI example)."
   type        = list(string)
+  default     = []
 }
 
 variable "security_group_ids" {
   description = "Security group IDs to attach to the task ENI (typically outbound-only, used in run-task CLI example)."
   type        = list(string)
+  default     = []
 }
