@@ -17,6 +17,8 @@ jobs:
           - examples/vpc-minimal-basic
           - examples/ecr-repo-basic
           - examples/iam-runtime-basic
+          - examples/lambda-fn-basic
+          - examples/s3-notify-lambda-basic
 
     defaults:
       run:
