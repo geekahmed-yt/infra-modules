@@ -94,12 +94,12 @@ resource "aws_iam_role_policy" "lambda_s3" {
     Statement = [
       {
         Effect   = "Allow"
-        Action   = ["s3:GetObject"]
+        Action   = ["s3:GetObject", "s3:ListBucket"]
         Resource = local.raw_objects_arn
       },
       {
         Effect   = "Allow"
-        Action   = ["s3:PutObject", "s3:AbortMultipartUpload"]
+        Action   = ["s3:PutObject", "s3:AbortMultipartUpload", "s3:GetObject", "s3:ListBucket"]
         Resource = local.processed_objects_arn
       }
     ]
